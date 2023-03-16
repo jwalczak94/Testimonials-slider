@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Slideshow with Testimonials</h1>
+
+      <div class="slideshow relative">
+        <!-- SLIDE 01 -->
+        <div
+          class="slide fade max-w-[81.125rem] mx-auto flex-col gap-8 justify-center items-center px-6 pt-6 pb-20 lg:flex-row-reverse lg:pb-0 lg:pt-14 lg:gap-0 lg:pl-[5.75rem] xl:pr-0"
+          style="display: flex">
+          <div class="testimonial_img px-9 pt-8 pb-6 lg:pt-16 lg:pr-[5.75rem] lg:pb-14 lg:pl-16">
+            <img src="./images/image-tanya.jpg" alt="Tanya Sinclair" class="shadow-icon" />
+          </div>
+          <div
+            class="testimonial_text max-w-[39.57rem] px-2 pt-6 lg:-mr-32 lg:pt-16 lg:px-0 lg:basis-[52.8%]">
+            <p class="text-lg font-light text-center lg:text-left">
+              “ I’ve been interested in coding for a while but never taken the jump, until now. I
+              couldn’t recommend this course enough. I’m now in the job of my dreams and so excited
+              about the future.”
+            </p>
+            <div
+              class="flex flex-col items-center mt-5 md:flex-row md:gap-3 md:justify-center lg:mt-8 lg:justify-start">
+              <span class="text-base font-bold">Tanya Sinclair</span>
+              <span class="text-base font-medium text-fontColor300">UX Engineer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 02 -->
+        <div
+          class="slide fade max-w-[81.125rem] mx-auto flex-col gap-8 justify-center items-center px-6 pt-6 pb-20 lg:flex-row-reverse lg:pb-0 lg:pt-14 lg:gap-0 lg:pl-[5.75rem] xl:pr-0"
+          style="display: none">
+          <div
+            class="testimonial_img px-9 pt-8 pb-6 lg:pt-16 lg:pr-[5.75rem] lg:pb-14 lg:pl-16 lg:px-0">
+            <img src="./images/image-john.jpg" alt="John Tarkpor" class="shadow-icon" />
+          </div>
+          <div
+            class="testimonial_text max-w-[39.57rem] px-2 pt-6 lg:-mr-32 lg:pt-16 lg:px-0 lg:basis-[52.8%]">
+            <p class="text-lg font-light text-center lg:text-left">
+              “ If you want to lay the best foundation possible I’d recommend taking this course.
+              The depth the instructors go into is incredible. I now feel so confident about
+              starting up as a professional developer.”
+            </p>
+            <div
+              class="flex flex-col items-center mt-5 md:flex-row md:gap-3 md:justify-center lg:mt-8 lg:justify-start">
+              <span class="text-base font-bold">John Tarkpor</span>
+              <span class="text-base font-medium text-fontColor300"
+                >Junior Front-end Developer</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDERS CONTROL -->
+        <div
+          class="control flex items-center justify-center absolute left-1/2 -translate-x-1/2 top-8 shadow-icon cursor-pointer">
+          <img
+            src="./images/icon-prev.svg"
+            alt=""
+            aria-hidden="true"
+            class="icon px-[1.0625rem] py-[0.875rem] bg-white rounded-l-3xl lg:px-6 lg:py-5 lg:max-h-14 lg:max-w-14 duration-200"
+            id="btn-prev" />
+
+          <img
+            src="./images/icon-next.svg"
+            alt=""
+            aria-hidden="true"
+            class="icon px-[1.0625rem] py-[0.875rem] bg-white rounded-r-3xl lg:px-6 lg:py-5 lg:max-h-14 lg:max-w-14 duration-200"
+            id="btn-next" />
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="slideshow.js"></script>
+</html>
