@@ -595,34 +595,6 @@ body {
   left: 50%;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-9 {
-  bottom: 2.25rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.bottom-36 {
-  bottom: 9rem;
-}
-
-.bottom-80 {
-  bottom: 20rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .top-8 {
   top: 2rem;
 }
@@ -856,6 +828,11 @@ body {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
